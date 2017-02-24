@@ -1,6 +1,7 @@
 # [React](https://facebook.github.io/react/) &middot; [![CircleCI Status](https://circleci.com/gh/facebook/react.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/facebook/react) [![Build Status](https://img.shields.io/travis/facebook/react/master.svg?style=flat)](https://travis-ci.org/facebook/react) [![Coverage Status](https://img.shields.io/coveralls/facebook/react/master.svg?style=flat)](https://coveralls.io/github/facebook/react?branch=master) [![npm version](https://img.shields.io/npm/v/react.svg?style=flat)](https://www.npmjs.com/package/react) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md#pull-requests)
 
 React is a JavaScript library for building user interfaces.
+React là một thư viện dùng để xây dựng giao diện người dùng 
 
 * **Declarative:** React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable, simpler to understand, and easier to debug.
 * **Component-Based:** Build encapsulated components that manage their own state, then compose them to make complex UIs. Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM.
@@ -8,30 +9,39 @@ React is a JavaScript library for building user interfaces.
 
 [Learn how to use React in your own project](https://facebook.github.io/react/docs/getting-started.html).
 
-## Examples
+## Examples (Ví dụ) 
 
 We have several examples [on the website](https://facebook.github.io/react/). Here is the first one to get you started:
 
+- Ví dụ hiển thị "Hello React!" ra màn hình
 ```jsx
+//Khởi tạo component có tên <HelloMessage> trong ES6/ES2015
 class HelloMessage extends React.Component {
   render() {
     return <div>Hello {this.props.name}</div>;
   }
 }
 
+//Hiển thị component vừa tạo vào thẻ có id là 'container'
 ReactDOM.render(
-  <HelloMessage name="John" />,
+  <HelloMessage name="React!" />,
   document.getElementById('container')
 );
 ```
 
-This example will render "Hello John" into a container on the page.
+This example will render "Hello React!" into a container on the page.
+
 
 You'll notice that we used an HTML-like syntax; [we call it JSX](https://facebook.github.io/react/docs/introducing-jsx.html). JSX is not required to use React, but it makes code more readable, and writing it feels like writing HTML. We recommend using [Babel](https://babeljs.io/) with a [React preset](https://babeljs.io/docs/plugins/preset-react/) to convert JSX into native JavaScript for browsers to digest.
 
-## Installation
+- React.js sử dụng syntax gọi là JSX. JSX không bắt buộc để sử dụng React nhưng nó giúp việc viết mã trở nên dễ đọc hơn, cảm giác như đang viết HTML. React khuyên dùng Babel với bộ present "React" để chuyển đổi mã JSX sang Javascript
 
-React is available as the `react` package on [npm](https://www.npmjs.com/). It is also available on a [CDN](https://facebook.github.io/react/docs/installation.html#using-a-cdn).
+
+## Installation (Cài đặt)
+
+React is available as the `react` package on [npm](https://www.npmjs.com/). It is also available on a [CDN]
+- React có trong thư việc npm với tên là 'react'. Bạn cũng có thể sử dụng vớ CDN
+(https://facebook.github.io/react/docs/installation.html#using-a-cdn).
 
 React is flexible and can be used in a variety of projects. You can create new apps with it, but you can also gradually introduce it into an existing codebase without doing a rewrite.
 
